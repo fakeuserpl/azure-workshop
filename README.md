@@ -124,7 +124,7 @@ az acr repository list --name $AZ_CONTAINER_NAME --output table
 - Tworzenie kontenera, na którym uruchomiony zostanie obraz Dockera
 
 ```
-az container create --resource-group $AZ_CONTAINER_NAME --name $AZ_RUN_CONTAINER_NAME --image $AZ_CONTAINER_NAME.azurecr.io/demo:0.0.1-SNAPSHOT --dns-name-label demo-spring-azure --ports 8080
+az container create --resource-group $AZ_RESOURCE_GROUPE --name $AZ_RUN_CONTAINER_NAME --image $AZ_CONTAINER_NAME.azurecr.io/demo:0.0.1-SNAPSHOT --dns-name-label $AZ_LABEL_NAME --ports 8080
 ```
 
 - Przed próbą zalogowania trzeba wyświetlić dane do logowania, oraz uruchomić użytkownika admina
@@ -142,7 +142,7 @@ az acr update --name $AZ_CONTAINER_NAME --admin-enabled true
 - Uruchomienie i sprawdzenie, czy konener działa prawidłowo
 
 ```
-curl 'http://$AZ_RUN_CONTAINER_NAME.eastus.azurecontainer.io:8080/hello'
+curl 'http://$AZ_LABEL_NAME.$AZ_LOCATION.azurecontainer.io:8080/hello'
 ```
 
 
