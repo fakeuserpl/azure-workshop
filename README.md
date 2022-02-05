@@ -101,6 +101,7 @@ az acr create --resource-group $AZ_RESOURCE_GROUP --name $AZ_CONTAINER_NAME --sk
 
 ```
 docker tag demo:0.0.1-SNAPSHOT $AZ_CONTAINER_NAME.azurecr.io/demo:0.0.1-SNAPSHOT
+```
 
 - Zalogowanie się do utworzonego kontenera:
 
