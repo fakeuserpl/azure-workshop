@@ -1,6 +1,10 @@
+#Opis aplikacji
+
 Aplikacja powstała na potrzeby ćwiczeń Usługi i platformy deweloperskie dla aplikacji w chmurze.
 Została ona utworzona w języku programowania Java i został w niej użyty framework SpringBoot.
 Opiera się ona o wzorzec JPA czyli standard z grupy tzw. ORM (ang. Object-Relational Mapping).
+
+#Wymagane narzędzia
 
 Narzędzia potrzebne do wykonania poniższych instrukcji:
 
@@ -9,6 +13,7 @@ Narzędzia potrzebne do wykonania poniższych instrukcji:
 * ![Java JDK](https://www.oracle.com/java/technologies/downloads/)
 * ![Docker](https://www.docker.com/)
 
+#Deploy
 
 Aby zdeployowac aplikację na Azure Spring Cloud należy wykonać następujące polecenia:
 
@@ -146,7 +151,7 @@ curl 'http://$AZ_LABEL_NAME.$AZ_LOCATION.azurecontainer.io:8080/hello'
 ```
 
 
-Dodatkowa dokumentacja:
+#Dodatkowa dokumentacja
 
 * ![Azure Spring Cloud](https://azure.microsoft.com/pl-pl/services/spring-cloud/)
 * ![Container Instance](https://azure.microsoft.com/pl-pl/services/container-instances/)
