@@ -75,7 +75,7 @@ az mysql server firewall-rule create \
 
 ```
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
-``
+```
 
 Budowanie mikroserwisu Spring Boot jako obraz Dockera i umieszczanie go na Azure Container Instance
 
